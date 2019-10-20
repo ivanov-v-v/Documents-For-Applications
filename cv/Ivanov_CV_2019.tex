@@ -99,10 +99,9 @@
 %-------------------------------------------------------------------------------
 \section{EDUCATION}
 \vmarginsmall
-\textbf{Moscow Institute Of Physics And Technology} \hfill GPA: 9.51/10; in the top 5\% of the university\\
+\textbf{Moscow Institute Of Physics And Technology},\hfill \textit{Weighted GPA: 9.43/10; top 5\% of the university}\\
 {\sl Bachelor of Science}, Applied Mathematics \& Computer Science \hfill \textit{08.2016 — 08.2020} \\
-Department of Discrete Mathematics\\
-\textbf{Relevant courses:} applied statistics, optimization, machine learning, deep learning, stochastic processes, algorithms and data structures (3 terms), concurrent programming, distributed programming
+\textbf{Relevant courses:} Bayesian statistics, applied statistics, optimization, machine learning, deep learning, stochastic processes, algorithms and data structures, concurrent programming, distributed programming
 %\textbf{Odessa National University}, Odessa, Ukraine \hfill GPA: 4.93/5 \\
 %{\sl Bachelor of Science}, Applied Mathematics \hfill \textit{2014 — 2016}
 %-------------------------------------------------------------------------------
@@ -111,11 +110,17 @@ Department of Discrete Mathematics\\
 \section{RESEARCH EXPERIENCE}
 \vmarginsmall
 \par 
-\textbf{Research Internship, Computational Biology, DKFZ/EMBL, Heidelberg,} \textit{01.07.2019 — 01.01.2020}
-\textbf{Supervisor:} \href{https://scholar.google.com/citations?user=ClSXZ4IAAAAJ&hl=en}{Oliver Stegle}, PhD (Cambridge), Group Leader at: DKFZ, EMBL Heidelberg, EMBL-EBI\\
-My project is about inferring clonal structure in a tumor sample by integrating multiple single-cell modalities (scCNV and scSNV) coming from patients with cancer. I am working on the modifications of the \href{https://github.com/PMBio/cardelino}{Cardelino} model under supervision of \href{https://www.ebi.ac.uk/about/people/yuanhua-huang}{Yuanhua Huang (EMBL-EBI)}. At the same time, I have done a lot of data preparation myself in Python and C++. I tried to write the code capable of fully exploiting the resources of the dedicated HPC cluster. I also learned about the best practices of reproducible research (snakemake pipelines, environment isolation) and applied my knowledge of variational inference. 
+\textbf{Research Internship, Computational Biology, \href{https://www.dkfz.de/en/index.html}{DKFZ}/\href{https://www.embl.de}{EMBL Heidelberg},} \textit{01.07.2019 — 01.01.2020}
+\textbf{Supervisors:} \href{https://scholar.google.com/citations?user=ClSXZ4IAAAAJ&hl=en}{Dr Oliver Stegle} (group leader); Dr Hana Susak, \href{https://scholar.google.com/citations?user=Uo7F714AAAAJ&hl=en&oi=ao}{Dr Nicola Casiraghi}, \href{https://scholar.google.com/citations?user=LUUIw_EAAAAJ&hl=en&oi=ao}{Dr Yuanhua Huang}\\
+$ - $ Under supervision of Dr Yuanhua Huang (EMBL-EBI, Cambridge), I designed and implemented \textbf{XClone},\\  \hphantom{—} graphical Bayesian model capable of integrating single-cell genomes, transcriptomes, ATAC-seq,\\ \hphantom{—}  mitochondrial DNA. It's a modification of \href{https://github.com/PMBio/cardelino}{Cardelino} model, a tool for clonal structure inference from\\ \hphantom{—} scRNA-seq, but based on CNV and other sources of allele specificity observed in multiple modalities. \\\hphantom{—} We used variational inference to ensure that our model scales to the state-of-the-art datasets. We also\\ \hphantom{—} implemented a method for sampling realistic cells from expression profiles obtained from G\&T data.\\ 
+$ - $ Under supervision of Dr Casiraghi, I worked with nuclei, PDX and G\&T datasets coming from the patient \\ 
+\hphantom{—}  with medulloblastoma — brain cancer in children. I had hands-on experience with 10x Genomics software \\\hphantom{—} stack, in particular with  CellRanger and its \href{https://www.10xgenomics.com/solutions/single-cell-cnv/}{CNV-kit}. We used Nanopore-seq for accurate read phasing \\\hphantom{—} and significantly reduced sparsity of scRNA-seq dataset by aggregating allele-specific expression information  \\\hphantom{—} over SNPs sharing same CNV state and covered by particular haplotype block.\\ 
+$ - $ Under supervision of Dr Susak, I worked on a method for inferring clonal tumour tree structure from 
+\\\hphantom{—} scDNA/scATAC. We came up with a modification of Levenstein distance based on genomic rearrangements.\\\hphantom{—} We constructed a minimal spanning tree with cells as nodes and defined clones as clusters in that tree.\\
+$ - $ At the same time, I've done a lot of data preparation myself in Python and C++. Given size and \\\hphantom{—} complexity of single-cell datasets, I had to written highly optimized code capable of making the most \\\hphantom{—} out of the resources of the dedicated HPC cluster. I also learned about the best practices of reproducible \\\hphantom{—} research (snakemake pipelines, environment isolation) and applied those in my projects.
 \par 
-\textbf{Mutual analysis of interaction networks and quantitative trait loci for yeast}, \textit{2018-present}:
+\textbf{Mutual analysis of interaction networks and quantitative trait loci for yeast}, \textit{2018-present}:\\
+\textbf{<<Modern Combinatorics and Network Science>> Lab} of Prof A. Raigorodsky, MIPT.\\
 \textbf{Supervisor:} \href{https://scholar.google.com/citations?hl=en&user=Arx56RkJBrYC&view_op=list_works&sortby=pubdate}{Yuri Pritykin}, PhD (Princeton), Research Scholar at \href{https://www.mskcc.org/}{MKSCC}\\
 Detailed project description is available \href{https://github.com/ivanov-v-v/eQTL_analysis}{on GitHub}.\vspace{0.2em}\\
 $ - $ Implemented different approaches to QTL mapping in yeast, from \href{https://www.ncbi.nlm.nih.gov/pubmed/11923494}{basic} to \href{https://elifesciences.org/articles/35471}{state-of-the-art}\\
@@ -139,23 +144,25 @@ $ - $ Worked with GeneOntology and KEGG API and related Python/R tools.\vspace{0
 
 \section{HONORS}
 \vmarginsmall
-- \textbf{\href{http://phystech-foundation.org/en/foundation_}{Abramov Scholarship For Academic Excellence}} \hfill{} \textit{2nd term — present}\\
-\hphantom{-} Earned by top 10\% students by cumulative GPA in their academic program.\vspace{0.2em}\\
+- \textbf{\href{http://phystech-foundation.org/en/foundation_}{Abramov Scholarship For Academic Excellence}} \hfill{} \textit{2nd term — 6th term}\\
+\hphantom{-} Earned by top 10\% students by cumulative GPA in their academic program in academic terms 2-6.\vspace{0.2em}\\
 - \textbf{\href{https://studyinrussia.ru/en/study-in-russia/scholarships}{Russian Government Scholarship For International Students}} \hfill{} \textit{2016 — 2020}\\
 \hphantom{-} Was selected to become one of 3 Ukrainians to receive the full-coverage scholarship to study CS at the \\\hphantom{-} best Russian universities and got enrolled to MIPT directly, without entrance examination.\vmarginsmall\\
 - \textbf{Governor of the Moscow Region Scholarship For Academic Excellence} \hfill \textit{Autumn 2017}\\
 \hphantom{-} Awarded termly to excellent students for promising achievements in scientific activities.\vmarginsmall\\
 - \textbf{\href{http://winter2019.futurebiotech.ru/}{Future Biotech Winter Retreat "Genome function, editing and therapy"}} \hfill{} \textit{Winter 2019}\\
-\hphantom{-}  Became one of 70 young researchers selected to participate in top biotech school in Russia\\ 
+\hphantom{-}  Became one of 70 young researchers selected to participate in top biotech winter school in Russia\\ 
 \hphantom{-}  sponsored by companies like AstraZeneca, Biocad, GE Healthcare etc. \vmarginsmall\\
+\newpage 
+$  $\\
 - \textbf{\href{https://bioinf.me/en/education}{Summer School in Bioinformatics} by Russian Bioinformatics Institute} \hfill{} \textit{Summer 2017}\\
 \hphantom{-} Became one of 50 CS majors selected to participate. Was a member of a hackathon-winning team.\vmarginsmall\\
 - \textbf{\href{https://it-edu.mipt.ru/pages/workshops/?lang=en}{Moscow International Workshops in Competitive Programming}} \hfill{} \textit{Autumn 2016, Spring 2017}\\
 \hphantom{-}  	Two-times participant of the leading Russian competitive programming bootcamp.\vmarginsmall\\
 - \textbf{\href{https://icpc.baylor.edu/}{ACM ICPC} Moscow Subregional Contest (1/4 World Finals)} \hfill{} \textit{Autumn 2017}\\
 \hphantom{-} Our team ranked 17 among 301 participating teams and 7th at home university.\vmarginsmall\\
-%- \textbf{All-Ukrainian Chemistry Olympiad} — double awardee, triple winner of regional stage\\
-%- \textbf{All-Ukrainian Tournament of Young Chemists} — 2nd place
+- \textbf{All-Ukrainian Chemistry Olympiad} — double awardee, triple winner of regional stage\\
+- \textbf{All-Ukrainian Tournament of Young Chemists} — 2nd place
 %-------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %-------------------------------------------------------------------------------
@@ -175,9 +182,22 @@ $ - $ Worked with GeneOntology and KEGG API and related Python/R tools.\vspace{0
 %\section{LANGUAGES}
 %\vmarginsmall
 %English (advanced), German (A2), Russian (native), Ukrainian (native)
+\section{TEACHING EXPERIENCE} 
+\vspace{0.1cm}
+- \textbf{TA at <<Theory and practice of concurrent programming>> course at MIPT} \hfill{} \textit{Spring term 2019}\\
+\hphantom{-} My responsibilities included weekly code reviews on GitLab and knowledge assessment sessions. \vspace{0.2em}\\
+- \textbf{TA at <<Mathematical statistics>> and <<Applied statistics>> courses at MIPT} \hfill{} \textit{Fall term 2019}\\
+\hphantom{-} Authored learning materials for a primer on scientific computing for data scientists: \href{https://github.com/ivanov-v-v/scientific-computing-101}{see on GitHub (WIP)}.\\
+\hphantom{-} Topics included: environment setup, Jupyter ecosystem, efficient Python programming (JIT, Cython,\\ 
+\hphantom{-} data persistence, parallel and distributed computing), advanced visualizations (\href{https://ipywidgets.readthedocs.io/en/latest/}{IPyWidgets}, \href{https://docs.bokeh.org/en/latest/}{bokeh}, \href{https://github.com/bloomberg/bqplot}{bqplot}), \\\hphantom{-} reproducible workflows (\href{https://snakemake.readthedocs.io/en/stable/}{SnakeMake}, \href{https://github.com/pachyderm/pachyderm}{pachyderm}), cloud services (\href{https://colab.research.google.com}{Google Colab}, \href{https://aws.amazon.com}{Amazon AWS}). Also was \\\hphantom{-} responsible for code base maintenance and student knowledge evaluation.
+\vspace{0.2em}\\
+- \textbf{TA at <<Algorithms and data structures>> course at MIPT} \hfill{} \textit{Fall term 2019}\\
+\hphantom{-} Weekly code reviews on GitLab (code style, correctness). \vspace{0.2em}
 \section{REFERENCES} 
 \vspace{0.1cm}
-\textbf{Dr. Yuri Pritykin} (thesis supervisor), research scholar at MKSCC \hfill\href{mailto://yuri.pritykin@gmail.com}{yuri.pritykin@gmail.com}\\ 
+\textbf{Dr Oliver Stegle}, group leader at EMBL, EMBL-EBI and DKFZ
+\hfill\href{mailto://oliver.stegle@embl.de}{oliver.stegle@embl.de}\\ 
+\textbf{Dr Yuri Pritykin} (thesis supervisor), research scholar at MSKCC \hfill\href{mailto://yuri.pritykin@gmail.com}{yuri.pritykin@gmail.com}\\ 
 \textbf{Federal Prof. Andrei Raygorodsky}, head of department at MIPT \hfill\href{mailto://mraigor@yandex.ru}{mraigor@yandex.ru}
 %-------------------------------------------------------------------------------
 %	Interests
